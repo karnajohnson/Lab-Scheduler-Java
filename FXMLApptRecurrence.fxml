@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="FrmApptRecurrence" prefHeight="276.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labscheduler.FXMLApptRecurrenceController">
+   <children>
+      <Label fx:id="lblApptRecurrence" layoutX="14.0" layoutY="27.0" text="Appointment Recurrence">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBeginTime" layoutX="141.0" layoutY="77.0" prefHeight="26.0" prefWidth="140.0" />
+      <Label fx:id="lblBeginTime" layoutX="14.0" layoutY="82.0" text="Start Time (HH:MM):" />
+      <ToggleButton fx:id="btnTogBeginTime" layoutX="294.0" layoutY="77.0" mnemonicParsing="false" onAction="#handlesBtnTogBeginTime" text="PM" />
+      <Label fx:id="lblEndTime" layoutX="341.0" layoutY="82.0" text="End Time (HH:MM):" />
+      <TextField fx:id="txtEndTime" layoutX="462.0" layoutY="77.0" prefHeight="26.0" prefWidth="127.0" />
+      <ToggleButton fx:id="btnTogEndTime" layoutX="594.0" layoutY="77.0" mnemonicParsing="false" onAction="#handlesBtnTogEndTime" text="PM" />
+      <CheckBox fx:id="chkSunday" layoutX="151.0" layoutY="121.0" mnemonicParsing="false" text="Sun" />
+      <CheckBox fx:id="chkMonday" layoutX="205.0" layoutY="121.0" mnemonicParsing="false" text="Mon" />
+      <CheckBox fx:id="chkTuesday" layoutX="261.0" layoutY="121.0" mnemonicParsing="false" text="Tue" />
+      <CheckBox fx:id="chkWednesday" layoutX="313.0" layoutY="121.0" mnemonicParsing="false" text="Wed" />
+      <CheckBox fx:id="chkThursday" layoutX="371.0" layoutY="121.0" mnemonicParsing="false" text="Thu" />
+      <CheckBox fx:id="chkFriday" layoutX="428.0" layoutY="121.0" mnemonicParsing="false" text="Fri" />
+      <CheckBox fx:id="chkSaturday" layoutX="479.0" layoutY="121.0" mnemonicParsing="false" text="Sat" />
+      <Label fx:id="lblBeginDate" layoutX="12.0" layoutY="177.0" text="Begin Date (MM/DD/YYYY):" />
+      <TextField fx:id="txtBeginDate" layoutX="188.0" layoutY="172.0" prefHeight="26.0" prefWidth="140.0" />
+      <Label fx:id="lblEndDate" layoutX="331.0" layoutY="177.0" text="End Date (MM/DD/YYYY):" />
+      <TextField fx:id="txtEndDate" layoutX="501.0" layoutY="172.0" prefHeight="26.0" prefWidth="133.0" />
+      <Button fx:id="btnOk" layoutX="462.0" layoutY="233.0" mnemonicParsing="false" onAction="#handlesBtnOK" prefHeight="26.0" prefWidth="63.0" text="OK" />
+      <Button fx:id="btnCancel" layoutX="544.0" layoutY="233.0" mnemonicParsing="false" onAction="#handlesBtnCancel" text="Cancel" />
+      <Label layoutX="38.0" layoutY="130.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="FrmLabRequest" prefHeight="620.0" prefWidth="331.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labscheduler.FXMLLabDocController">
+    <children>
+        <Button fx:id="btnClose" layoutX="214.0" layoutY="580.0" onAction="#handlesbtnClose" prefHeight="26.0" prefWidth="106.0" text="Close Form" />
+        <Label fx:id="label" layoutX="125.0" layoutY="83.0" minHeight="16" minWidth="69" />
+      <Button fx:id="btnClear" layoutX="14.0" layoutY="580.0" mnemonicParsing="false" onAction="#handlesbtnClear" text="Clear All Fields" />
+      <Button fx:id="btnSubmit" layoutX="17.0" layoutY="544.0" mnemonicParsing="false" onAction="#handlesbtnSubmit" prefHeight="25.0" prefWidth="307.0" text="Submit Lab Request" />
+      <Label fx:id="lblLabForm" layoutX="2.0" text="Lab Scheduling Request Form">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRequestName" layoutX="32.0" layoutY="37.0" text="Requestor Name:" />
+      <TextField fx:id="txtRequestName" layoutX="141.0" layoutY="33.0" prefHeight="25.0" prefWidth="170.0" />
+      <Label fx:id="lblRequestEmail" layoutX="32.0" layoutY="66.0" text="Requestor Email:" />
+      <TextField fx:id="txtRequestEmail" layoutX="141.0" layoutY="62.0" prefHeight="25.0" prefWidth="170.0" />
+      <Label fx:id="lblEventTitle" layoutX="60.0" layoutY="105.0" text="Event Title:" />
+      <TextField fx:id="txtEvent" layoutX="141.0" layoutY="101.0" prefHeight="25.0" prefWidth="170.0" />
+      <Label fx:id="lblNumPart" layoutX="21.0" layoutY="135.0" text="Number of Participants:" />
+      <TextField fx:id="txtNumPart" layoutX="187.0" layoutY="130.0" prefHeight="25.0" prefWidth="123.0" />
+      <Button fx:id="btnApptRecurrence" layoutX="19.0" layoutY="166.0" mnemonicParsing="false" onAction="#handlesbtnApptRecurrence" prefHeight="35.0" prefWidth="297.0" text="Appointment Recurrence" />
+      <Label fx:id="lblEventDate" layoutX="18.0" layoutY="217.0" text="Event Date (MM/DD/YYYY):" />
+      <TextField fx:id="txtEventDate" layoutX="187.0" layoutY="212.0" prefHeight="25.0" prefWidth="123.0" />
+      <Label fx:id="lblStartTime" layoutX="22.0" layoutY="250.0" text="Start Time (HH:MM):" />
+      <TextField fx:id="txtStartTime" layoutX="152.0" layoutY="245.0" prefHeight="25.0" prefWidth="109.0" />
+      <ToggleButton fx:id="btnTogStart" layoutX="267.0" layoutY="245.0" mnemonicParsing="false" onAction="#handlesbtnTogStart" prefHeight="25.0" prefWidth="44.0" text="PM" />
+      <Label fx:id="lblEndTime" layoutX="25.0" layoutY="282.0" text="End Time (HH:MM):" />
+      <TextField fx:id="txtEndTime" layoutX="152.0" layoutY="277.0" prefHeight="25.0" prefWidth="109.0" />
+      <ToggleButton fx:id="btnTogEnd" layoutX="267.0" layoutY="277.0" mnemonicParsing="false" onAction="#handlesbtnTogEnd" prefHeight="25.0" prefWidth="44.0" text="PM" />
+      <CheckBox fx:id="chkPrint" layoutX="17.0" layoutY="369.0" mnemonicParsing="false" text="Printer Requested" />
+      <Label fx:id="lblSpecialSoft" layoutX="152.0" layoutY="347.0" text="Special Software Requests:" />
+      <RadioButton fx:id="radYes" layoutX="203.0" layoutY="369.0" mnemonicParsing="false" onAction="#handlesradYes" text="Yes" />
+      <RadioButton fx:id="radNo" layoutX="261.0" layoutY="369.0" mnemonicParsing="false" onAction="#handlesradNo" text="No" />
+      <TextArea fx:id="txtSpecialSoft" editable="false" layoutX="25.0" layoutY="403.0" prefHeight="131.0" prefWidth="291.0" wrapText="true" />
+      <Label fx:id="lblAppt" layoutX="21.0" layoutY="212.0" prefHeight="92.0" prefWidth="297.0" text="Label" visible="false" wrapText="true" />
+      <Button fx:id="btnCheck" layoutX="21.0" layoutY="310.0" mnemonicParsing="false" onAction="#handlesbtnCheck" prefHeight="35.0" prefWidth="291.0" text="Review Event Listings and Check Availability" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="frmEventListings" prefHeight="448.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labscheduler.FXMLEventListingsController">
+   <children>
+      <TableView fx:id="tbRequestEvent" layoutX="14.0" layoutY="42.0" prefHeight="77.0" prefWidth="454.0" />
+      <Label fx:id="lblRequestEvent" layoutX="17.0" layoutY="14.0" text="Requested Event" />
+      <Button fx:id="btnCheckAvail" layoutX="22.0" layoutY="124.0" mnemonicParsing="false" onAction="#handlesBtnEvent" prefHeight="34.0" prefWidth="207.0" text="Check Availability of New Event" />
+      <Label fx:id="lblAvailable" layoutX="239.0" layoutY="129.0" prefHeight="25.0" prefWidth="252.0" />
+      <Label fx:id="lblSchedule" layoutX="15.0" layoutY="172.0" text="Scheduled Events" />
+      <TableView fx:id="tbEvents" layoutX="22.0" layoutY="200.0" prefHeight="200.0" prefWidth="454.0" />
+      <Button fx:id="btnCloseEvent" layoutX="418.0" layoutY="408.0" mnemonicParsing="false" onAction="#handlesBtnCloseEvent" prefHeight="26.0" prefWidth="58.0" text="Close" />
+   </children>
+</AnchorPane>
